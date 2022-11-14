@@ -1,0 +1,180 @@
+/* подключение шрифтов */
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* Подключение автосайза */
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #181818;
+
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+/* Стили хедера начало */
+
+.header{
+    
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top: 57px;
+
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 70px;
+}
+
+nav {
+    
+    margin: 0 auto;
+    padding-top: 20px;
+}
+nav ul {
+    display: table;
+    margin: 0 auto;
+}
+nav li {
+    float:left;
+}
+
+.header_item:last-child{
+margin-right: 0;
+font-size: 16px;
+text-align: right;
+}
+.header_link_last{
+    font-size: 12px;
+    
+line-height: 21px;
+color: #181818;
+
+
+}
+.header_link{
+    font-size: 14px;
+line-height: 21px;
+color: #181818;
+text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+
+/* Стили хедера конец */
+
+/* Стил интро начало */
+.intro{
+    min-height:100vh ;
+    background: url(../img/intro_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 216px;
+}
+
+.intro_title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 110.4%;
+    color: #2F2F2F;
+    max-width: 434px;
+    margin-bottom: 16px;
+}
+.intro_subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 149.4%;
+    max-width: 493px;
+    max-height: 81px;
+    color: #2F2F2F;
+    margin-bottom: 35px;
+}
+.main_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.go_toMenu
+{
+padding: 13px 56px;
+
+font-weight: 600;
+font-size: 16px;
+color: #FFFFFF;
+background: #EE7700;
+box-shadow: 0px 0px 16px rgba(255, 119, 20, 0.44);
+border-radius: 0px 24px 24px 24px;
+border:0;
+}
+.go_toMenu:hover, .go_toMenu:focus, .go_toMenu:active{
+    background: #ff7f00;
+}
+.desert_slider{
+    background: url(../img/desert.jpg)  no-repeat ;
+    margin-top: 88px;
+    width: 380px;
+    height: 239px;
+    
+}
+.flour_products{
+    background: url(../img/Muchnie.jpg) no-repeat ;
+    width: 380px;
+    height: 239px;
+}
+.slider{
+    width: 380px;
+    height: 239px;
+    
+}
+/* Стили интро конец */
